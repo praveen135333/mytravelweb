@@ -1,971 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jadoo Travel UI</title>
-    <link rel="icon" type="image/x-icon" href="./images/jadoo-favicon.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header class="header" id="header">
-      <nav
-        class="navbar wow fadeInDown"
-        data-wow-duration="1"
-        data-wow-delay="0.9s"
-      >
-        <div class="container">
-          <a href="#" class="brand">
-            <img src="./images/logo.png" alt="" />
-          </a>
-          <div class="burger">
-            <div class="burger-line-wrapper">
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-            </div>
-          </div>
-          <div class="menu" id="menu">
-            <div class="menu-header">
-              <a href="#" class="brand">
-                <img src="./images/logo.png" alt="" />
-              </a>
-              <div class="burger is-active close-menu">
-                <div class="burger-line-wrapper">
-                  <span class="burger-line"></span>
-                  <span class="burger-line"></span>
-                  <span class="burger-line"></span>
-                </div>
-              </div>
-            </div>
-            <ul class="menu-inner">
-              <li class="menu-item">
-                <a href="#" class="menu-link">Destinations</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="menu-link">Hotels</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="menu-link">Flights</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="menu-link">Bookings</a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-block">
-            <a href="#" class="menu-block-link">Login</a>
-            <a href="#" class="menu-block-link menu-block-btn">Sign up</a>
-          </div>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My travel agency</title>
+  <link rel="icon" type="image/x-icon" href="./images/jadoo-favicon.png" />
 
-      <div class="header-backdrop"></div>
-    </header>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/form.css">
+</head>
 
-    <!-- Main -->
-    <main class="main">
-      <!-- Hero Section -->
-      <section class="section hero-section">
-        <div class="container">
-          <div class="hero-inner">
-            <div class="hero-row">
-              <div class="hero-column hero-column-image">
-                <div
-                  class="hero-image wow fadeIn"
-                  data-wow-duration="1"
-                  data-wow-delay="0.10s"
-                >
-                  <img
-                    class="hero-plan-left"
-                    src="./images/hero-image/plan-left.png"
-                    alt=""
-                  />
-                  <img
-                    class="hero-main-image"
-                    src="./images/hero-image/main.png"
-                    alt=""
-                  />
-                  <img
-                    class="hero-plan-right"
-                    src="./images/hero-image/plan-right.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="hero-column hero-column-content">
-                <div class="hero-content">
-                  <div
-                    class="hero-sub-heading wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.5s"
-                  >
-                    Best Destinations around the world
-                  </div>
-                  <h1
-                    class="hero-main-heading wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.6s"
-                  >
-                    Travel, <span class="text-decoration">enjoy</span> and live
-                    a new and full life
-                  </h1>
-                  <div
-                    class="hero-copy-text wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.7s"
-                  >
-                    <p>
-                      Built Wicket longer admire do barton vanity itself do in
-                      it. Preferred to sportsmen it engrossed listening. Park
-                      gate sell they west hard for the.
-                    </p>
-                  </div>
-                  <div
-                    class="hero-action wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.8s"
-                  >
-                    <a href="#" class="hero-find-btn">Find out more</a>
-                    <a href="#" class="hero-play-btn">
-                      <span>
-                        <i class="bx bx-play"></i>
-                      </span>
-                      Play Demo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Category Section -->
-      <section class="section category-section">
-        <div class="container">
-          <div class="section-header">
-            <div
-              class="section-sub-heading wow fadeInUp"
-              data-wow-duration="1"
-              data-wow-delay="0.5s"
-            >
-              CATEGORY
-            </div>
-            <h3
-              class="section-main-heading wow fadeInUp"
-              data-wow-duration="1"
-              data-wow-delay="0.6s"
-            >
-              We Offer Best Services
-            </h3>
-          </div>
-
-          <div class="category-section-wrapper">
-            <div class="category-row">
-              <div
-                class="category-column wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.5s"
-              >
-                <div class="category-card">
-                  <img
-                    class="category-icon"
-                    src="./images/category-icon-1.svg"
-                    alt=""
-                  />
-                  <div class="category-title">Calculated Weather</div>
-                  <div class="category-copy">
-                    Built Wicket longer admire do barton vanity itself do in it.
-                  </div>
-                </div>
-                <div class="category-rectangle">
-                  <img src="./images/category-rectangle.png" alt="" />
-                </div>
-              </div>
-              <div
-                class="category-column wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.6s"
-              >
-                <div class="category-card">
-                  <img
-                    class="category-icon"
-                    src="./images/category-icon-2.svg"
-                    alt=""
-                  />
-                  <div class="category-title">Best Flights</div>
-                  <div class="category-copy">
-                    Engrossed listening. Park gate sell they west hard for the.
-                  </div>
-                </div>
-                <div class="category-rectangle">
-                  <img src="./images/category-rectangle.png" alt="" />
-                </div>
-              </div>
-              <div
-                class="category-column wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.7s"
-              >
-                <div class="category-card">
-                  <img
-                    class="category-icon"
-                    src="./images/category-icon-3.svg"
-                    alt=""
-                  />
-                  <div class="category-title">Local Events</div>
-                  <div class="category-copy">
-                    Barton vanity itself do in it. Prefer to men it engrossed
-                    listening.
-                  </div>
-                </div>
-                <div class="category-rectangle">
-                  <img src="./images/category-rectangle.png" alt="" />
-                </div>
-              </div>
-              <div
-                class="category-column wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.8s"
-              >
-                <div class="category-card">
-                  <img
-                    class="category-icon"
-                    src="./images/category-icon-4.svg"
-                    alt=""
-                  />
-                  <div class="category-title">Customization</div>
-                  <div class="category-copy">
-                    We deliver outsourced aviation services for military
-                    customers
-                  </div>
-                </div>
-                <div class="category-rectangle">
-                  <img src="./images/category-rectangle.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="category-pattern">
-            <img src="./images/category-patt.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Selling Section -->
-      <section class="section selling-section">
-        <div class="container">
-          <div class="section-header">
-            <div
-              class="section-sub-heading wow fadeInUp"
-              data-wow-duration="1"
-              data-wow-delay="0.5s"
-            >
-              Top Selling
-            </div>
-            <h3
-              class="section-main-heading wow fadeInUp"
-              data-wow-duration="1"
-              data-wow-delay="0.6s"
-            >
-              Top Destinations
-            </h3>
-          </div>
-
-          <div class="selling-section-wrapper">
-            <div class="selling-row">
-              <div
-                class="selling-column wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.5s"
-              >
-                <div class="selling-card">
-                  <a href="#">
-                    <div class="selling-card-image">
-                      <img src="./images/rom.jpg" alt="" />
-                    </div>
-                    <div class="selling-details">
-                      <div class="selling-info">
-                        <div class="selling-location">Rome, Italty</div>
-                        <div class="selling-price">$5k</div>
-                      </div>
-                      <div class="selling-duration">
-                        <i class="bx bx-calendar"></i> 10 Days Trip
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="selling-column wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.6s"
-              >
-                <div class="selling-card">
-                  <a href="#">
-                    <div class="selling-card-image">
-                      <img src="./images/london.jpg" alt="" />
-                    </div>
-                    <div class="selling-details">
-                      <div class="selling-info">
-                        <div class="selling-location">London, UK</div>
-                        <div class="selling-price">$2k</div>
-                      </div>
-                      <div class="selling-duration">
-                        <i class="bx bx-calendar"></i> 12 Days Trip
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="selling-column wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.7s"
-              >
-                <div class="selling-card">
-                  <a href="#">
-                    <div class="selling-card-image">
-                      <img src="./images/europe.jpg" alt="" />
-                    </div>
-                    <div class="selling-details">
-                      <div class="selling-info">
-                        <div class="selling-location">Full Europe</div>
-                        <div class="selling-price">$15k</div>
-                      </div>
-                      <div class="selling-duration">
-                        <i class="bx bx-calendar"></i> 28 Days Trip
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Steps Section -->
-      <section class="section steps-section">
-        <div class="container">
-          <div class="steps-row">
-            <div class="steps-column steps-column-steps">
-              <div class="section-header">
-                <div
-                  class="section-sub-heading wow fadeInUp"
-                  data-wow-duration="1"
-                  data-wow-delay="0.5s"
-                >
-                  Easy and Fast
-                </div>
-                <h3
-                  class="section-main-heading wow fadeInUp"
-                  data-wow-duration="1"
-                  data-wow-delay="0.6s"
-                >
-                  Book your next trip <br />
-                  in 3 easy steps
-                </h3>
-              </div>
-
-              <div class="steps-steps">
-                <ul>
-                  <li
-                    class="wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.5s"
-                  >
-                    <div class="step-icon step-icon-yellow">
-                      <img src="./images/selection.png" alt="" />
-                    </div>
-                    <div class="step-detail">
-                      <div class="step-title">Choose Destination</div>
-                      <div class="step-copy">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Urna, tortor tempus.
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.6s"
-                  >
-                    <div class="step-icon step-icon-orange">
-                      <img src="./images/water-sport.png" alt="" />
-                    </div>
-                    <div class="step-detail">
-                      <div class="step-title">Make Payment</div>
-                      <div class="step-copy">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Urna, tortor tempus.
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.7s"
-                  >
-                    <div class="step-icon step-icon-green">
-                      <img src="./images/taxi.png" alt="" />
-                    </div>
-                    <div class="step-detail">
-                      <div class="step-title">
-                        Reach Airport on Selected Date
-                      </div>
-                      <div class="step-copy">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Urna, tortor tempus.
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="steps-column steps-column-card">
-              <div
-                class="step-card wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.5s"
-              >
-                <a href="#">
-                  <div class="step-card-header">
-                    <img src="./images/greece-trip.jpg" alt="" />
-                  </div>
-                  <div class="step-card-body">
-                    <div class="step-card-title">Trip To Greece</div>
-                    <div class="step-card-trip-details">
-                      <div class="trip-date">14-29 June</div>
-                      <div>|</div>
-                      <div class="trip-by">by Robbin joseph</div>
-                    </div>
-                    <div class="step-card-icons">
-                      <div class="step-card-icon">
-                        <i class="bx bx-leaf"></i>
-                      </div>
-                      <div class="step-card-icon">
-                        <i class="bx bx-map-alt"></i>
-                      </div>
-                      <div class="step-card-icon">
-                        <i class="bx bx-send"></i>
-                      </div>
-                    </div>
-                    <div class="step-card-people">
-                      <i class="bx bx-group"></i>
-                      24 people going
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="step-card-small">
-                <a
-                  href="#"
-                  class="wow fadeInUp"
-                  data-wow-duration="1"
-                  data-wow-delay="0.6s"
-                >
-                  <div class="step-card-small-head">
-                    <div class="step-card-small-image">
-                      <img src="./images/rom.jpg" alt="" />
-                    </div>
-                    <div class="step-card-small-copy">
-                      <div class="step-card-small-status">Ongoing</div>
-                      <div class="step-card-small-title">Trip to rome</div>
-                      <div class="step-card-small-progress">
-                        <span>40%</span> completed
-                        <div class="step-card-small-bar">
-                          <div
-                            class="step-card-bar-done"
-                            style="width: 40%"
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="step-shadow"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials Section -->
-      <section class="section testimonials-section swiper">
-        <div class="container">
-          <div class="testimonials-row">
-            <div class="testimonials-column">
-              <div class="section-header">
-                <div
-                  class="section-sub-heading wow fadeInUp"
-                  data-wow-duration="1"
-                  data-wow-delay="0.5s"
-                >
-                  Testimonials
-                </div>
-                <h3
-                  class="section-main-heading wow fadeInUp"
-                  data-wow-duration="1"
-                  data-wow-delay="0.6s"
-                >
-                  What people say <br />
-                  about Us.
-                </h3>
-              </div>
-            </div>
-            <div
-              class="testimonials-column slider-column wow fadeIn"
-              data-wow-duration="1"
-              data-wow-delay="0.5s"
-            >
-              <!-- Slider main container -->
-              <div class="testimonials-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonials-card">
-                      <div class="testimonials-avatar">
-                        <img
-                          src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="testimonials-quote">
-                        “On the Windows talking painted pasture yet its express
-                        parties use. Sure last upon he same as knew next. Of
-                        believed or diverted no.”
-                      </div>
-                      <div class="testimonials-person">Chris Thomas</div>
-                      <div class="testimonials-info">CEO of Red Button</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonials-card">
-                      <div class="testimonials-avatar">
-                        <img
-                          src="https://images.pexels.com/photos/157920/woman-face-curly-hair-157920.jpeg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="testimonials-quote">
-                        “After going through a number of sites, I had to settle
-                        for Jadoo because honestly it was a no brainer trying
-                        someone else”
-                      </div>
-                      <div class="testimonials-person">Sarah Connor</div>
-                      <div class="testimonials-info">Globetrotter</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonials-card">
-                      <div class="testimonials-avatar">
-                        <img
-                          src="https://images.pexels.com/photos/29497727/pexels-photo-29497727/free-photo-of-man-relaxing-on-modern-bridge-with-city-views.jpeg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="testimonials-quote">
-                        “On the Windows talking painted pasture yet its express
-                        parties use. Sure last upon he same as knew next. Of
-                        believed or diverted no.”
-                      </div>
-                      <div class="testimonials-person">Mike Taylor</div>
-                      <div class="testimonials-info">Lahore, Pakistan</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonials-card">
-                      <div class="testimonials-avatar">
-                        <img
-                          src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="testimonials-quote">
-                        “On the Windows talking painted pasture yet its express
-                        parties use. Sure last upon he same as knew next. Of
-                        believed or diverted no.”
-                      </div>
-                      <div class="testimonials-person">Chris Thomas</div>
-                      <div class="testimonials-info">CEO of Red Button</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonials-card">
-                      <div class="testimonials-avatar">
-                        <img
-                          src="https://images.pexels.com/photos/157920/woman-face-curly-hair-157920.jpeg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="testimonials-quote">
-                        “After going through a number of sites, I had to settle
-                        for Jadoo because honestly it was a no brainer trying
-                        someone else”
-                      </div>
-                      <div class="testimonials-person">Sarah Connor</div>
-                      <div class="testimonials-info">Globetrotter</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- If we need pagination -->
-                <div
-                  class="swiper-pagination wow fadeIn"
-                  data-wow-duration="1"
-                  data-wow-delay="0.5s"
-                ></div>
-
-                <!-- If we need navigation buttons -->
-                <div
-                  class="testimonials-controls wow fadeIn"
-                  data-wow-duration="1"
-                  data-wow-delay="0.6s"
-                >
-                  <div class="swiper-button-prev bx bx-chevron-up"></div>
-                  <div class="swiper-button-next bx bx-chevron-down"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials Section -->
-      <section class="section logo-section">
-        <div class="container">
-          <div class="swiper logo-section-swiper">
-            <div class="swiper-wrapper client-logo-slider">
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.5s"
-              >
-                <img
-                  src="https://i.ibb.co/q5XDptD/client-logo-1.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.6s"
-              >
-                <img
-                  src="https://i.ibb.co/TR64y9H/client-logo-2.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.7s"
-              >
-                <img
-                  src="https://i.ibb.co/Q6PRFPg/client-logo-3.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.8s"
-              >
-                <img
-                  src="https://i.ibb.co/LSmZvJD/client-logo-4.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.9s"
-              >
-                <img
-                  src="https://i.ibb.co/pK9KdhT/client-logo-5.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.9s"
-              >
-                <img
-                  src="https://i.ibb.co/q5XDptD/client-logo-1.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.9s"
-              >
-                <img
-                  src="https://i.ibb.co/TR64y9H/client-logo-2.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.9s"
-              >
-                <img
-                  src="https://i.ibb.co/Q6PRFPg/client-logo-3.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.9s"
-              >
-                <img
-                  src="https://i.ibb.co/LSmZvJD/client-logo-4.png"
-                  alt="client-logo"
-                />
-              </a>
-              <a
-                href="#"
-                class="swiper-slide wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.9s"
-              >
-                <img
-                  src="https://i.ibb.co/pK9KdhT/client-logo-5.png"
-                  alt="client-logo"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-news">
-        <div class="container">
-          <div class="section-news-inner">
-            <h3
-              class="section-news-title wow fadeInUp"
-              data-wow-duration="1"
-              data-wow-delay="0.5s"
-            >
-              Subscribe to get information, latest news and other <br />
-              interesting offers about Jadoo
-            </h3>
-
-            <div class="section-news-field">
-              <div
-                class="section-news-input wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.5s"
-              >
-                <i class="bx bx-envelope"></i>
-                <input type="email" placeholder="Your email" name="" id="" />
-              </div>
-              <div
-                class="section-news-btn wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.6s"
-              >
-                <button>Subscribe</button>
-              </div>
-            </div>
-
-            <img
-              class="section-news-send wow fadeIn"
-              data-wow-duration="1"
-              data-wow-delay="0.5s"
-              src="./images/send.png"
-              alt=""
-            />
-            <img
-              class="section-news-bg-1 wow fadeIn"
-              data-wow-duration="1"
-              data-wow-delay="0.8s"
-              src="./images/nl-bg1.png"
-              alt=""
-            />
-            <img
-              class="section-news-bg-2 wow fadeIn"
-              data-wow-duration="1"
-              data-wow-delay="0.9s"
-              src="./images/nl-bg2.png"
-              alt=""
-            />
-            <img
-              class="section-bg-pat"
-              src="./images/category-patt.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
+<body>
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <nav class="navbar wow fadeInDown" data-wow-duration="1" data-wow-delay="0.9s">
       <div class="container">
-        <div class="footer-row">
-          <div
-            class="footer-column footer-column-logo wow fadeIn"
-            data-wow-duration="1"
-            data-wow-delay="0.5s"
-          >
-            <div class="footer-logo">Jadoo.</div>
+        <a href="#" class="brand">
+          <img src="./images/category-icon-2.svg" alt=""><span>MytravelAgency</span>
+        </a>
+        <div class="menu" id="menu">
+          <div class="menu-header">
+            <a href="#" class="brand">
+              <img src="./images/logo.png" alt="" />
+            </a>
+          </div>
+          <ul class="menu-inner">
+            <li class="menu-item">
+              <a href="#Destinations" class="menu-link">Destinations</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Hotels</a>
+            </li>
+            <li class="menu-item">
+              <a href="#Category" class="menu-link">Flights</a>
+            </li>
+            <li class="menu-item">
+              <a href="#Bookings" class="menu-link">Bookings</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <button id="login" class="menu-block-link">Login</button>
+          <button class="menu-block-link menu-block-btn">Sign up</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-backdrop"></div>
+  </header>
+  <!-- Login form  -->
+  <div id="form" class="hide">
+    <form action="">
+      <h1>Login Form</h1>
+      <hr>
+        <!-- <label for="">Username</label> -->
+        <input type="text" placeholder="Username">
+
+        <!-- <label for="">Password</label> -->
+        <input type="password" placeholder="Password">
+
+        <button>Log in</button>
+        <a href="#">Create a new account</a>
+
+    </form>
+  </div>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="section hero-section">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-row">
+            <div class="hero-column hero-column-image">
+              <div class="hero-image wow fadeIn" data-wow-duration="1" data-wow-delay="0.10s">
+                <img class="hero-plan-left" src="./images/hero-image/plan-left.png" alt="" />
+                <img class="hero-main-image" src="./images/hero-image/main.png" alt="" />
+                <img class="hero-plan-right" src="./images/hero-image/plan-right.png" alt="" />
+              </div>
+            </div>
+            <div class="hero-column hero-column-content">
+              <div class="hero-content">
+                <div class="hero-sub-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+                  Best Destinations around the world
+                </div>
+                <h1 class="hero-main-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+                  Travel, <span class="text-decoration">enjoy</span> and live
+                  a new and full life
+                </h1>
+                <div class="hero-copy-text wow fadeInUp" data-wow-duration="1" data-wow-delay="0.7s">
+                  <p>
+                    Built Wicket longer admire do barton vanity itself do in
+                    it. Preferred to sportsmen it engrossed listening. Park
+                    gate sell they west hard for the.
+                  </p>
+                </div>
+                <div class="hero-action wow fadeInUp" data-wow-duration="1" data-wow-delay="0.8s">
+                  <a href="#" class="hero-find-btn">Find out more</a>
+                  <a href="#" class="hero-play-btn">
+                    <span>
+                      <i class="bx bx-play"></i>
+                    </span>
+                    Play Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section id="Category" class="section category-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-sub-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+            CATEGORY
+          </div>
+          <h3 class="section-main-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+            We Offer Best Services
+          </h3>
+        </div>
+
+        <div class="category-section-wrapper">
+          <div class="category-row">
+            <div class="category-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+              <div class="category-card">
+                <img class="category-icon" src="./images/category-icon-1.svg" alt="" />
+                <div class="category-title">Calculated Weather</div>
+                <div class="category-copy">
+                  Calculated using real-time data and predictive models for accuracy.
+                </div>
+              </div>
+              <div class="category-rectangle">
+                <img src="./images/category-rectangle.png" alt="" />
+              </div>
+            </div>
+            <div class="category-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+              <div class="category-card">
+                <img class="category-icon" src="./images/category-icon-2.svg" alt="" />
+                <div class="category-title">Best Flights</div>
+                <div class="category-copy">
+                  Smooth takeoff, and exceptional service throughout
+                </div>
+              </div>
+              <div class="category-rectangle">
+                <img src="./images/category-rectangle.png" alt="" />
+              </div>
+            </div>
+            <div class="category-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.7s">
+              <div class="category-card">
+                <img class="category-icon" src="./images/category-icon-3.svg" alt="" />
+                <div class="category-title">Local Events</div>
+                <div class="category-copy">
+                  All information available of local events in area.
+                </div>
+              </div>
+              <div class="category-rectangle">
+                <img src="./images/category-rectangle.png" alt="" />
+              </div>
+            </div>
+            <div class="category-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.8s">
+              <div class="category-card">
+                <img class="category-icon" src="./images/category-icon-4.svg" alt="" />
+                <div class="category-title">Customization</div>
+                <div class="category-copy">
+                  Can add various add-ons for seamless traveling experience.
+                </div>
+              </div>
+              <div class="category-rectangle">
+                <img src="./images/category-rectangle.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-pattern">
+          <img src="./images/category-patt.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Selling Section -->
+    <section class="section selling-section" id="Destinations">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-sub-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+            Top Selling
+          </div>
+          <h3 class="section-main-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+            Top Destinations
+          </h3>
+        </div>
+
+        <div class="selling-section-wrapper">
+          <div class="selling-row">
+            <div class="selling-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+              <div class="selling-card">
+                <a href="#">
+                  <div class="selling-card-image">
+                    <img src="./images/rom.jpg" alt="" />
+                  </div>
+                  <div class="selling-details">
+                    <div class="selling-info">
+                      <div class="selling-location">Rome, Italty</div>
+                      <div class="selling-price">$5k</div>
+                    </div>
+                    <div class="selling-duration">
+                      <i class="bx bx-calendar"></i> 10 Days Trip
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="selling-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+              <div class="selling-card">
+                <a href="#">
+                  <div class="selling-card-image">
+                    <img src="./images/london.jpg" alt="" />
+                  </div>
+                  <div class="selling-details">
+                    <div class="selling-info">
+                      <div class="selling-location">London, UK</div>
+                      <div class="selling-price">$2k</div>
+                    </div>
+                    <div class="selling-duration">
+                      <i class="bx bx-calendar"></i> 12 Days Trip
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="selling-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.7s">
+              <div class="selling-card">
+                <a href="#">
+                  <div class="selling-card-image">
+                    <img src="./images/europe.jpg" alt="" />
+                  </div>
+                  <div class="selling-details">
+                    <div class="selling-info">
+                      <div class="selling-location">Full Europe</div>
+                      <div class="selling-price">$15k</div>
+                    </div>
+                    <div class="selling-duration">
+                      <i class="bx bx-calendar"></i> 28 Days Trip
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="section steps-section" id="Bookings">
+      <div class="container">
+        <div class="steps-row">
+          <div class="steps-column steps-column-steps">
+            <div class="section-header">
+              <div class="section-sub-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+                Easy and Fast
+              </div>
+              <h3 class="section-main-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+                Book your next trip <br />
+                in 3 easy steps
+              </h3>
+            </div>
+
+            <div class="steps-steps">
+              <ul>
+                <li class="wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+                  <div class="step-icon step-icon-yellow">
+                    <img src="./images/selection.png" alt="" />
+                  </div>
+                  <div class="step-detail">
+                    <div class="step-title">Choose Destination🌍</div>
+                    <div class="step-copy">
+                      Whether it's mountains, beaches, or bustling cities—let your heart lead the way.
+                    </div>
+                  </div>
+                </li>
+                <li class="wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+                  <div class="step-icon step-icon-orange">
+                    <img src="./images/water-sport.png" alt="" />
+                  </div>
+                  <div class="step-detail">
+                    <div class="step-title">Make Payment💳</div>
+                    <div class="step-copy">
+                      Secure your spot with a swift payment and get ready for the journey ahead!
+                    </div>
+                  </div>
+                </li>
+                <li class="wow fadeInUp" data-wow-duration="1" data-wow-delay="0.7s">
+                  <div class="step-icon step-icon-green">
+                    <img src="./images/taxi.png" alt="" />
+                  </div>
+                  <div class="step-detail">
+                    <div class="step-title">
+                      Reach Airport on Selected Date✈️
+                    </div>
+                    <div class="step-copy">
+                      Arrive at the airport on your chosen date, passport in hand and adventure in sight!
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="steps-column steps-column-card">
+            <div class="step-card wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+              <a href="#">
+                <div class="step-card-header">
+                  <img src="./images/greece-trip.jpg" alt="" />
+                </div>
+                <div class="step-card-body">
+                  <div class="step-card-title">Trip To Greece</div>
+                  <div class="step-card-trip-details">
+                    <div class="trip-date">14-29 June</div>
+                    <div>|</div>
+                    <div class="trip-by">by Robbin joseph</div>
+                  </div>
+                  <div class="step-card-icons">
+                    <div class="step-card-icon">
+                      <i class="bx bx-leaf"></i>
+                    </div>
+                    <div class="step-card-icon">
+                      <i class="bx bx-map-alt"></i>
+                    </div>
+                    <div class="step-card-icon">
+                      <i class="bx bx-send"></i>
+                    </div>
+                  </div>
+                  <div class="step-card-people">
+                    <i class="bx bx-group"></i>
+                    24 people going
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="step-card-small">
+              <a href="#" class="wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+                <div class="step-card-small-head">
+                  <div class="step-card-small-image">
+                    <img src="./images/rom.jpg" alt="" />
+                  </div>
+                  <div class="step-card-small-copy">
+                    <div class="step-card-small-status">Ongoing</div>
+                    <div class="step-card-small-title">Trip to rome</div>
+                    <div class="step-card-small-progress">
+                      <span>40%</span> completed
+                      <div class="step-card-small-bar">
+                        <div class="step-card-bar-done" style="width: 40%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="step-shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section swiper">
+      <div class="container">
+        <div class="testimonials-row">
+          <div class="testimonials-column">
+            <div class="section-header">
+              <div class="section-sub-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+                Testimonials
+              </div>
+              <h3 class="section-main-heading wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+                What people say <br />
+                about Us.
+              </h3>
+            </div>
+          </div>
+          <div class="testimonials-column slider-column wow fadeIn" data-wow-duration="1" data-wow-delay="0.5s">
+            <!-- Slider main container -->
+            <div class="testimonials-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-avatar">
+                      <img src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg" alt="" />
+                    </div>
+                    <div class="testimonials-quote">
+                      “On the Windows talking painted pasture yet its express
+                      parties use. Sure last upon he same as knew next. Of
+                      believed or diverted no.”
+                    </div>
+                    <div class="testimonials-person">Chris Thomas</div>
+                    <div class="testimonials-info">CEO of Red Button</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-avatar">
+                      <img src="https://images.pexels.com/photos/157920/woman-face-curly-hair-157920.jpeg" alt="" />
+                    </div>
+                    <div class="testimonials-quote">
+                      “After going through a number of sites, I had to settle
+                      for Jadoo because honestly it was a no brainer trying
+                      someone else”
+                    </div>
+                    <div class="testimonials-person">Sarah Connor</div>
+                    <div class="testimonials-info">Globetrotter</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-avatar">
+                      <img
+                        src="https://images.pexels.com/photos/29497727/pexels-photo-29497727/free-photo-of-man-relaxing-on-modern-bridge-with-city-views.jpeg"
+                        alt="" />
+                    </div>
+                    <div class="testimonials-quote">
+                      “On the Windows talking painted pasture yet its express
+                      parties use. Sure last upon he same as knew next. Of
+                      believed or diverted no.”
+                    </div>
+                    <div class="testimonials-person">Mike Taylor</div>
+                    <div class="testimonials-info">Lahore, Pakistan</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-avatar">
+                      <img src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg" alt="" />
+                    </div>
+                    <div class="testimonials-quote">
+                      “On the Windows talking painted pasture yet its express
+                      parties use. Sure last upon he same as knew next. Of
+                      believed or diverted no.”
+                    </div>
+                    <div class="testimonials-person">Chris Thomas</div>
+                    <div class="testimonials-info">CEO of Red Button</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-avatar">
+                      <img src="https://images.pexels.com/photos/157920/woman-face-curly-hair-157920.jpeg" alt="" />
+                    </div>
+                    <div class="testimonials-quote">
+                      “After going through a number of sites, I had to settle
+                      for Jadoo because honestly it was a no brainer trying
+                      someone else”
+                    </div>
+                    <div class="testimonials-person">Sarah Connor</div>
+                    <div class="testimonials-info">Globetrotter</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination wow fadeIn" data-wow-duration="1" data-wow-delay="0.5s"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="testimonials-controls wow fadeIn" data-wow-duration="1" data-wow-delay="0.6s">
+                <div class="swiper-button-prev bx bx-chevron-up"></div>
+                <div class="swiper-button-next bx bx-chevron-down"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section logo-section">
+      <div class="container">
+        <div class="swiper logo-section-swiper">
+          <div class="swiper-wrapper client-logo-slider">
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+              <img src="https://i.ibb.co/q5XDptD/client-logo-1.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+              <img src="https://i.ibb.co/TR64y9H/client-logo-2.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.7s">
+              <img src="https://i.ibb.co/Q6PRFPg/client-logo-3.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.8s">
+              <img src="https://i.ibb.co/LSmZvJD/client-logo-4.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.9s">
+              <img src="https://i.ibb.co/pK9KdhT/client-logo-5.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.9s">
+              <img src="https://i.ibb.co/q5XDptD/client-logo-1.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.9s">
+              <img src="https://i.ibb.co/TR64y9H/client-logo-2.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.9s">
+              <img src="https://i.ibb.co/Q6PRFPg/client-logo-3.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.9s">
+              <img src="https://i.ibb.co/LSmZvJD/client-logo-4.png" alt="client-logo" />
+            </a>
+            <a href="#" class="swiper-slide wow fadeInUp" data-wow-duration="1" data-wow-delay="0.9s">
+              <img src="https://i.ibb.co/pK9KdhT/client-logo-5.png" alt="client-logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-news">
+      <div class="container">
+        <div class="section-news-inner">
+          <h3 class="section-news-title wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+            Subscribe to get information, latest news and other <br />
+            interesting offers about mytravelagency
+          </h3>
+
+          <div class="section-news-field">
+            <div class="section-news-input wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+              <i class="bx bx-envelope"></i>
+              <input type="email" placeholder="Your email" name="" id="" />
+            </div>
+            <div class="section-news-btn wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+              <button><a href="">Subscribe</a></button>
+            </div>
+          </div>
+
+          <img class="section-news-send wow fadeIn" data-wow-duration="1" data-wow-delay="0.5s" src="./images/send.png"
+            alt="" />
+          <img class="section-news-bg-1 wow fadeIn" data-wow-duration="1" data-wow-delay="0.8s"
+            src="./images/nl-bg1.png" alt="" />
+          <img class="section-news-bg-2 wow fadeIn" data-wow-duration="1" data-wow-delay="0.9s"
+            src="./images/nl-bg2.png" alt="" />
+          <img class="section-bg-pat" src="./images/category-patt.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-column footer-column-logo wow fadeIn" data-wow-duration="1" data-wow-delay="0.5s">
+          <div class="footer-logo">
+            <div class="footer-logo-l">
+              <img src="./images/category-icon-2.svg" alt="">MytravelAgency
+            </div>
             <div class="footer-copy">
               Book your trip in minute, get full Control for much longer.
             </div>
           </div>
-          <div
-            class="footer-column footer-column-link wow fadeIn"
-            data-wow-duration="1"
-            data-wow-delay="0.5s"
-          >
-            <h4 class="footer-heading">Company</h4>
-            <ul class="footer-links-list">
-              <li class="footer-links-item">
-                <a href="#">About</a>
-              </li>
-              <li class="footer-links-item">
-                <a href="#">Careers</a>
-              </li>
-              <li class="footer-links-item">
-                <a href="#">Mobile</a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="footer-column footer-column-link wow fadeIn"
-            data-wow-duration="1"
-            data-wow-delay="0.6s"
-          >
-            <h4 class="footer-heading">Contact</h4>
-            <ul class="footer-links-list">
-              <li class="footer-links-item">
-                <a href="#">Help/FAQ</a>
-              </li>
-              <li class="footer-links-item">
-                <a href="#">Press</a>
-              </li>
-              <li class="footer-links-item">
-                <a href="#">Affilates</a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="footer-column footer-column-link wow fadeIn"
-            data-wow-duration="1"
-            data-wow-delay="0.7s"
-          >
-            <h4 class="footer-heading">More</h4>
-            <ul class="footer-links-list">
-              <li class="footer-links-item">
-                <a href="#">Airlinefees</a>
-              </li>
-              <li class="footer-links-item">
-                <a href="#">Airline</a>
-              </li>
-              <li class="footer-links-item">
-                <a href="#">Low fare tips</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column footer-column-social">
-            <ul class="footel-social-list">
-              <li
-                class="footer-social-item wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.5s"
-              >
-                <a href="#">
-                  <i class="bx bxl-facebook"></i>
-                </a>
-              </li>
-              <li
-                class="footer-social-item wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.6s"
-              >
-                <a href="#">
-                  <i class="bx bxl-instagram"></i>
-                </a>
-              </li>
-              <li
-                class="footer-social-item wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.7s"
-              >
-                <a href="#">
-                  <i class="bx bxl-twitter"></i>
-                </a>
-              </li>
-            </ul>
 
-            <div
-              class="footer-app-title wow fadeIn"
-              data-wow-duration="1"
-              data-wow-delay="0.5s"
-            >
-              Discover our app
-            </div>
-            <div class="footer-apps">
-              <a
-                href="#"
-                class="wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.6s"
-              >
-                <img src="./images/play-store.png" alt="" />
+        </div>
+        <div class="footer-column footer-column-link wow fadeIn" data-wow-duration="1" data-wow-delay="0.5s">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links-list">
+            <li class="footer-links-item">
+              <a href="#">About</a>
+            </li>
+            <li class="footer-links-item">
+              <a href="#">Careers</a>
+            </li>
+            <li class="footer-links-item">
+              <a href="#">Mobile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column footer-column-link wow fadeIn" data-wow-duration="1" data-wow-delay="0.6s">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links-list">
+            <li class="footer-links-item">
+              <a href="#">Help/FAQ</a>
+            </li>
+            <li class="footer-links-item">
+              <a href="#">Press</a>
+            </li>
+            <li class="footer-links-item">
+              <a href="#">Affilates</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column footer-column-link wow fadeIn" data-wow-duration="1" data-wow-delay="0.7s">
+          <h4 class="footer-heading">More</h4>
+          <ul class="footer-links-list">
+            <li class="footer-links-item">
+              <a href="#">Airlinefees</a>
+            </li>
+            <li class="footer-links-item">
+              <a href="#">Airline</a>
+            </li>
+            <li class="footer-links-item">
+              <a href="#">Low fare tips</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column footer-column-social">
+          <ul class="footel-social-list">
+            <li class="footer-social-item wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+              <a href="https://www.facebook.com">
+                <i class="bx bxl-facebook"></i>
               </a>
-              <a
-                href="#"
-                class="wow fadeInUp"
-                data-wow-duration="1"
-                data-wow-delay="0.5s"
-              >
-                <img src="./images/apple-store.png" alt="" />
+            </li>
+            <li class="footer-social-item wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+              <a href="https://www.instagram.com">
+                <i class="bx bxl-instagram"></i>
               </a>
-            </div>
+            </li>
+            <li class="footer-social-item wow fadeInUp" data-wow-duration="1" data-wow-delay="0.7s">
+              <a href="https://www.twitter.com">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-app-title wow fadeIn" data-wow-duration="1" data-wow-delay="0.5s">
+            Discover our app
+          </div>
+          <div class="footer-apps">
+            <a href="#" class="wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
+              <img src="./images/play-store.png" alt="" />
+            </a>
+            <a href="#" class="wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
+              <img src="./images/apple-store.png" alt="" />
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div
-        class="footer-copy-rights wow fadeIn"
-        data-wow-duration="1"
-        data-wow-delay="0.5s"
-      >
-        All rights reserved@jadoo.co
-      </div>
-    </footer>
+    <div class="footer-copy-rights wow fadeIn" data-wow-duration="1" data-wow-delay="0.5s">
+      All rights reserved @MytravelAgency.co
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/gh/YT-PixelPerfectLabs/Youtube-Floating-Button/dist/script.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

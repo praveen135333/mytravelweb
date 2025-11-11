@@ -1,10 +1,17 @@
 //WOW init
 new WOW().init();
 
+const formm = document.querySelector("#form");
+const btn = document.querySelector("#login");
 const headerMenu = document.querySelector("#header");
 const burgerMenu = headerMenu.querySelector(".burger");
 const closeMenu = headerMenu.querySelector(".close-menu");
 const headerBackdrop = headerMenu.querySelector(".header-backdrop");
+
+// login toggle 
+btn.addEventListener("click", () => {
+  formm.classList.toggle("hide");
+});
 
 // Open Close Navbar Menu on Click Burger
 if (burgerMenu && headerMenu) {
