@@ -4,7 +4,8 @@
     font-size: 17px;
   }
 
-  .menu-block-btn {
+  .menu-block-btn a{
+    display: block !important;
     padding: 9px 22px;
   }
 

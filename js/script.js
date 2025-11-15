@@ -1,16 +1,24 @@
 //WOW init
 new WOW().init();
-
+const login_id = document.querySelector("#login_id");
 const formm = document.querySelector("#form");
-const btn = document.querySelector("#login");
+const toggleBtn = document.querySelector("#login");
 const headerMenu = document.querySelector("#header");
 const burgerMenu = headerMenu.querySelector(".burger");
 const closeMenu = headerMenu.querySelector(".close-menu");
 const headerBackdrop = headerMenu.querySelector(".header-backdrop");
 
 // login toggle 
-btn.addEventListener("click", () => {
-  formm.classList.toggle("hide");
+toggleBtn.addEventListener('click', (event) => {
+  formm.classList.remove('hide');
+  event.stopPropagation(); // Prevent immediate outside click detection
+});
+
+// Hide the box if clicked outside
+document.addEventListener('click', (event) => {
+  if (!formm.classList.contains('hide') && !formm.contains(event.target) && event.target !== toggleBtn) {
+    formm.classList.add('hide');
+  }
 });
 
 // Open Close Navbar Menu on Click Burger

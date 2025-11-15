@@ -22,11 +22,25 @@
         <a href="#" class="brand">
           <img src="./images/category-icon-2.svg" alt=""><span>MytravelAgency</span>
         </a>
+        <div class="burger">
+          <div class="burger-line-wrapper">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+        </div>
         <div class="menu" id="menu">
           <div class="menu-header">
             <a href="#" class="brand">
               <img src="./images/logo.png" alt="" />
             </a>
+            <div class="burger is-active close-menu">
+              <div class="burger-line-wrapper">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </div>
+            </div>
           </div>
           <ul class="menu-inner">
             <li class="menu-item">
@@ -45,7 +59,8 @@
         </div>
         <div class="menu-block">
           <button id="login" class="menu-block-link">Login</button>
-          <button class="menu-block-link menu-block-btn">Sign up</button>
+          <button class="menu-block-btn"><a class="menu-block-link" href="signup.html" target="_blank">Sign
+              up</a></button>
         </div>
       </div>
     </nav>
@@ -57,15 +72,14 @@
     <form action="">
       <h1>Login Form</h1>
       <hr>
-        <!-- <label for="">Username</label> -->
-        <input type="text" placeholder="Username">
+      <!-- <label for="">Username</label> -->
+      <input type="text" placeholder="Username">
 
-        <!-- <label for="">Password</label> -->
-        <input type="password" placeholder="Password">
+      <!-- <label for="">Password</label> -->
+      <input type="password" placeholder="Password">
 
-        <button>Log in</button>
-        <a href="#">Create a new account</a>
-
+      <button id="login_id">Log in</button>
+      <a href="signup.html" target="_blank">Create a new account</a>
     </form>
   </div>
 
@@ -132,7 +146,7 @@
             <div class="category-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
               <div class="category-card">
                 <img class="category-icon" src="./images/category-icon-1.svg" alt="" />
-                <div class="category-title">Calculated Weather</div>
+                <div class="category-title"><a href="https://www.visualcrossing.com/">Calculated Weather</a></div>
                 <div class="category-copy">
                   Calculated using real-time data and predictive models for accuracy.
                 </div>
@@ -156,7 +170,7 @@
             <div class="category-column wow fadeInUp" data-wow-duration="1" data-wow-delay="0.7s">
               <div class="category-card">
                 <img class="category-icon" src="./images/category-icon-3.svg" alt="" />
-                <div class="category-title">Local Events</div>
+                <div class="category-title"><a href="https://passyunkavenue.com/play/?gad_source=1&gad_campaignid=23224627578&gbraid=0AAAAAogSyViqk94tm5ZWvWe7npVhyUeVd&gclid=CjwKCAiAw9vIBhBBEiwAraSATqEdqkwweDAUtX5O-QB-MpJrQ8MvrmLTmktmO3QjzFIFZAwlKGMPzxoCa9EQAvD_BwE">Local Events</a></div>
                 <div class="category-copy">
                   All information available of local events in area.
                 </div>
@@ -208,7 +222,9 @@
                   </div>
                   <div class="selling-details">
                     <div class="selling-info">
-                      <div class="selling-location">Rome, Italty</div>
+                      <div class="selling-location"><a
+                          href="https://www.makemytrip.com/toursandattractions/details?acode=ACME216887&cmp=SEM|D|Tours|G|Generic|ACME-Rome|Guided_Tour|RSA|Regular&gad_source=1&gad_campaignid=22982299423&gbraid=0AAAAAD5Az1S7Pr0w9PCUDvFsSDz5a8I8v&gclid=CjwKCAiAw9vIBhBBEiwAraSATk0dXocIZkVZgrPreEg4jLjZ3uYXVydJylq1U-ghlgPMkjgIUNduIxoCtloQAvD_BwE">Rome,
+                          Italty</a></div>
                       <div class="selling-price">$5k</div>
                     </div>
                     <div class="selling-duration">
@@ -226,7 +242,9 @@
                   </div>
                   <div class="selling-details">
                     <div class="selling-info">
-                      <div class="selling-location">London, UK</div>
+                      <div class="selling-location"><a
+                          href="https://www.britishairways.com/content/en/in/flights/england/london?&brand=n&dm1_channel=ppc&dm1_mkt=in&dm1_campaign=ps_apmea_in_gga_ppcao_baf_en_gen_lh_in_lon&seo=n&dm1_keyword=flights+to+london&gclsrc=aw.ds&gad_source=1&gad_campaignid=20009826215&gbraid=0aaaaado28n3z6dlyhbhfyggsmb0akvuyi&gclid=cjwkcaiaw9vibhbbeiwarasatvyv7vglggi9f21uz4ggruyrplrc763kls1badhedq2l1xv-i--wzhoc31cqavd_bwe">London,
+                          UK</a></div>
                       <div class="selling-price">$2k</div>
                     </div>
                     <div class="selling-duration">
@@ -244,7 +262,9 @@
                   </div>
                   <div class="selling-details">
                     <div class="selling-info">
-                      <div class="selling-location">Full Europe</div>
+                      <div class="selling-location"><a
+                          href="https://www.makemytrip.com/holidays-international/europe-vacation-tour-packages.html">Full
+                          Europe</a></div>
                       <div class="selling-price">$15k</div>
                     </div>
                     <div class="selling-duration">
@@ -528,10 +548,10 @@
           <div class="section-news-field">
             <div class="section-news-input wow fadeInUp" data-wow-duration="1" data-wow-delay="0.5s">
               <i class="bx bx-envelope"></i>
-              <input type="email" placeholder="Your email" name="" id="" />
+              <input type="email" placeholder="Your email" />
             </div>
             <div class="section-news-btn wow fadeInUp" data-wow-duration="1" data-wow-delay="0.6s">
-              <button><a href="">Subscribe</a></button>
+              <button><a href="https:/www.gmail.com" target="_blank">Subscribe</a></button>
             </div>
           </div>
 
@@ -594,13 +614,15 @@
           <h4 class="footer-heading">More</h4>
           <ul class="footer-links-list">
             <li class="footer-links-item">
-              <a href="#">Airlinefees</a>
+              <a href="https://www.skyscanner.co.in/airlinefees">Airlinefees</a>
             </li>
             <li class="footer-links-item">
               <a href="#">Airline</a>
             </li>
             <li class="footer-links-item">
-              <a href="#">Low fare tips</a>
+              <a
+                href="https://in.trip.com/?Allianceid=3990057&SID=24387090&trip_sub1=gg&trip_sub3=D5285989&gad_source=1&gad_campaignid=22993429413&gbraid=0AAAAA_K8Gdjk5JXxvM59ppkCCCa_seKcJ&gclid=CjwKCAiAw9vIBhBBEiwAraSATvzOYVrtwhjBz5h7l7AKv1Jil90bpaT9L5WUsiNXblJ-x3U6eIkgcRoCnwMQAvD_BwE&locale=en-in">Low
+                fare tips</a>
             </li>
           </ul>
         </div>

@@ -58,3 +58,6 @@ form hr{
 .hide{
     display: none !important;
 }
+.display{
+    display: block !important;
+}
